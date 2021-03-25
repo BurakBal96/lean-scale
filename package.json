@@ -64,5 +64,9 @@
     "jsxBracketSameLine": true,
     "arrowParens": "avoid",
     "endOfLine": "auto"
+  },
+  "engines": {
+    "npm": "7.x",
+    "node": "14.x"
   }
 }
