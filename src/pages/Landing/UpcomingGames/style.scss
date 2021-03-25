@@ -1,0 +1,113 @@
+.upcoming-games {
+  padding: 40px 190px 60px 190px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: #17171a;
+
+  .upcoming-games-header {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row !important;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(#979797, 0.2);
+    padding-bottom: 6px;
+    margin-bottom: 33px;
+
+    .text {
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: row !important;
+      align-items: center;
+
+      .title {
+        font-size: 36px;
+        color: var(--very-light-pink);
+        margin-right: 38px;
+      }
+
+      .description {
+        color: var(--secondary-color);
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 300;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  > .content {
+    display: flex;
+    flex-direction: row !important;
+
+    .upcoming-games-header {
+      width: 45%;
+
+      > .title {
+        font-size: 20px;
+        font-weight: 300;
+        color: var(--very-light-pink);
+      }
+    }
+
+    .upcoming-games-item + .upcoming-games-item {
+      margin-left: 20px;
+    }
+    .upcoming-games-item {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+
+      .image {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        width: 100%;
+        height: 20vw;
+        background-position: center;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .upcoming-games-icon {
+          cursor: pointer;
+          top: 14px;
+          right: 14px;
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 30px;
+          //height: 22px;
+          position: relative;
+        }
+      }
+
+      .name {
+        font-size: 14px;
+        color: #ffffff;
+        margin-top: 12px;
+        line-height: 1.29;
+        letter-spacing: -0.22px;
+      }
+      .current-price {
+        margin-top: 12px;
+        color: rgba(235, 235, 245, 0.6);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      .full-price {
+        color: rgba(235, 235, 245, 0.4);
+        font-size: 13px;
+        text-decoration: line-through;
+        line-height: 1.48;
+      }
+
+      .discount {
+        font-weight: 700;
+        margin-left: 6px;
+        font-size: 13px;
+        color: #a335ef;
+      }
+    }
+  }
+}

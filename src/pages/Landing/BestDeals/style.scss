@@ -1,0 +1,16 @@
+.best-deals {
+  display: flex;
+  flex-direction: row !important;
+  backdrop-filter: blur(10px);
+  background-color: var(--dark-indigo);
+  padding: 45px 190px 30px;
+  justify-content: space-between;
+  align-items: center;
+
+  >.text {
+    white-space: nowrap;
+    font-size: 24px;
+    color: var(--very-light-pink);
+    margin-right: 51px;
+  }
+}

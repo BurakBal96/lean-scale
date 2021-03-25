@@ -1,0 +1,67 @@
+{
+  "name": "burak-bal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@sentry/browser": "^5.25.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "customize-cra": "^1.0.0",
+    "history": "^5.0.0",
+    "mobx": "^6.0.4",
+    "mobx-react": "^7.0.5",
+    "moment": "^2.29.1",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.1",
+    "react-app-rewired": "^2.1.6",
+    "react-cookies": "^0.1.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.11.0",
+    "react-router": "^6.0.0-beta.0",
+    "react-router-dom": "^6.0.0-beta.0",
+    "react-scripts": "3.4.3",
+    "use-deep-compare-effect": "^1.4.0",
+    "uuid": "^8.3.1"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired --max-old-space-size=4096 build",
+    "test": "react-app-rewired test --env=jsdom",
+    "patch": "yarn version --patch && git push",
+    "minor": "yarn version --minor && git push",
+    "major": "yarn version --major && git push",
+    "merge": "git push origin dev:staging"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "prettier": "^2.1.2"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "jsxBracketSameLine": true,
+    "arrowParens": "avoid",
+    "endOfLine": "auto"
+  }
+}

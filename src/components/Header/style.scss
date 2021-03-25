@@ -1,0 +1,88 @@
+.header{
+  height: 128px;
+
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: var(--light-black);
+
+  .upper {
+    padding: 19px 190px 19px 308px;
+    height: 80px;
+    background-color: var(--dark-gray);
+    display: flex;
+
+    box-sizing: border-box;
+    .brand-icon {
+      position: absolute;
+      z-index: 1;
+      object-fit: contain;
+      height: 90px;
+      width: calc(90px + 10%);
+      margin-right: 28px;
+      left: 190px;
+      top: 20px;
+
+      padding: 0;
+    }
+
+    .icons {
+      .active {
+        color: var(--primary-color);
+      }
+      >svg{
+        color: #414347;
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 13px;
+        margin-left: 38px;
+
+
+      }
+    }
+  }
+
+  .lower {
+    padding: 0 190px 0 308px;
+    height: 48px;
+    background-color: var(--light-black);
+
+    .navigation {
+      .item + .item {
+        border-left: 1px solid black;
+      }
+
+      .item{
+        all: unset;
+        cursor: pointer;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row !important;
+
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+        width: 100%;
+        color: white;
+
+        &.active {
+          background-image: linear-gradient(to bottom, #39393f, rgba(34, 34, 37, 0)), linear-gradient(to bottom, #222225, #222225);
+          width: 50%;
+          border-top: 2px solid var(--primary-color);
+          color: var(--primary-color)
+        }
+
+        &:hover {
+          background-image: linear-gradient(to bottom, #5d5d63, rgba(34, 34, 37, 0)), linear-gradient(to bottom, #222225, #222225);
+        }
+
+
+
+        svg {
+          margin-right: 9px;
+        }
+      }
+    }
+  }
+
+}
