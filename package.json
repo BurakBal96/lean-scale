@@ -28,7 +28,8 @@
     "patch": "yarn version --patch && git push",
     "minor": "yarn version --minor && git push",
     "major": "yarn version --major && git push",
-    "merge": "git push origin dev:staging"
+    "merge": "git push origin dev:staging",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
