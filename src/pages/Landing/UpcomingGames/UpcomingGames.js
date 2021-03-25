@@ -45,7 +45,7 @@ export const UpcomingGames = inject('UpcomingGamesStore')(
               Pre-order an upcoming game to start playing on Day 1.
             </div>
           </div>
-          <Button className="primary-btn light">Discover All</Button>
+          <Button className="primary-btn small light">Discover All</Button>
         </div>
 
         <div className="content">

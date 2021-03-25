@@ -16,7 +16,7 @@ export const Hub = () => {
             games..
           </div>
         </div>
-        <Button className="primary-btn light">Discover All</Button>
+        <Button className="primary-btn light small">Discover All</Button>
       </div>
 
       <div className="content">
