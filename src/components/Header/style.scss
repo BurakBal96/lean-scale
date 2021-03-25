@@ -13,16 +13,18 @@
 
     box-sizing: border-box;
     .brand-icon {
+
+      box-sizing: content-box;
       position: absolute;
-      z-index: 1;
+      //z-index: 1;
       object-fit: contain;
       height: 90px;
-      width: calc(90px + 10%);
+      width: 90px;
       margin-right: 28px;
       left: 190px;
       top: 20px;
-
-      padding: 0;
+      //
+      //padding: 0;
     }
 
     .icons {

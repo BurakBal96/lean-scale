@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {ReactComponent as BrandIcon} from "images/icon.svg"
-import {FaGooglePlay, GrApple} from "react-icons/all"
+import {ReactComponent as BrandIcon} from 'images/icon-mini.svg'
+import {FaGooglePlay, GrApple} from 'react-icons/all'
 
 export const Footer = () => {
   return (
@@ -58,10 +58,12 @@ export const Footer = () => {
       </div>
 
       <div className="section large horizon">
-        <BrandIcon />
+        <BrandIcon className="brand-icon" />
         <div className="vertical ml-15">
           <span className="title">Install the app</span>
-          <span className="text">Get great deals on games wherever you go!</span>
+          <span className="text">
+            Get great deals on games wherever you go!
+          </span>
         </div>
       </div>
 
@@ -71,7 +73,7 @@ export const Footer = () => {
       </div>
 
       <div className="section small">
-        <GrApple className="store-icon"/>
+        <GrApple className="store-icon" />
         <span className="title fs-13">Download on the App Store®</span>
       </div>
     </footer>
