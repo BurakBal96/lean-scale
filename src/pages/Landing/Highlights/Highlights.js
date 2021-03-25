@@ -47,15 +47,15 @@ export const Highlights = inject('HighlightGameStore')(
 
     const left = useMemo(() => {
       return list.find(i => i.order === mod(meta.count, current - 1)) || {}
-    }, [list, current])
+    }, [list, current, meta.count])
 
     const middle = useMemo(() => {
       return list.find(i => i.order === mod(meta.count, current)) || {}
-    }, [list, current])
+    }, [list, current, meta.count])
 
     const right = useMemo(() => {
       return list.find(i => i.order === mod(meta.count, current + 1)) || {}
-    }, [list, current])
+    }, [list, current, meta.count])
 
     const delayTheInterval = () => {
       setManualChange(true)

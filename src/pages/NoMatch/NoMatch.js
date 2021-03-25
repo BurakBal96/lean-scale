@@ -6,7 +6,7 @@ export const NoMatch = () => {
 
   useEffect(() => {
     navigate("/")
-  }, [])
+  }, [navigate])
 
   return null
   // const handleHome = () => navigate("/")

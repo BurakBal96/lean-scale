@@ -1,4 +1,4 @@
-import {action, computed, makeObservable, observable, toJS} from 'mobx'
+import {action, computed, makeObservable, observable} from 'mobx'
 import {BasicModel as Model, BasicMeta as Meta} from '../models'
 
 const mockData = {
